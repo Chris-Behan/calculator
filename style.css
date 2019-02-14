@@ -1,4 +1,7 @@
-h1 {
+#screen {
   color: blue;
   text-align: right;
+  min-height: 42px;
+  align-items: center;
+  margin-bottom: 0;
 }
