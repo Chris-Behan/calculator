@@ -1,0 +1,9 @@
+Calculator available at https://chris-behan.github.io./calc.html
+
+Tested on google chrome for windows and android
+
+Deployment instructions:
+copy calc.cc, calc.html and calc.js into your project directory.
+Then include a link in your website to calc.html, for example:
+<a href="calc.html" class="nav-item">Calculator</a> and the calculator will
+work as expected.
