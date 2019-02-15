@@ -5,3 +5,16 @@
   align-items: center;
   margin-bottom: 0;
 }
+
+#prev {
+
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 600px;
+	}
+	.container-fluid {
+		max-width: 600px;
+	}
+}

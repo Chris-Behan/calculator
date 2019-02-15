@@ -1,12 +1,27 @@
-let string = "0"
+let string = "0";
+let prev = "0";
+let justCalculated = false;
 
 function addToString(input){
   if(string.charAt(0) === "0"){
     string = input;
-    console.log(string);
   }
   else {
-    string = string + input
+	  if(justCalculated &&
+		  input === '/' ||
+		  input === '+' ||
+		  input === '-' ||
+		  input === '*') {
+		  string = string + input;
+		  justCalculated = false;
+	  }
+	  else if (justCalculated) {
+		  string = input
+		  justCalculated = false;
+	  }
+	  else {
+	  	string = string + input;
+	  }
   }
 }
 
@@ -104,12 +119,15 @@ $("#decimal").on("click", function(){
 $("#equals").on("click", function(){
   try {
     string = String(eval(string));
+	prev = string;
+	justCalculated = true;
   }
   catch(err){
     console.log(err.message);
     alert("Invalid input");
   }
   $("#screen").text(string);
+  $("#prev").text(prev);
 });
 
 $("#plus").on("click", function(){

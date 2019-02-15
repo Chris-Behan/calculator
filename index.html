@@ -8,17 +8,21 @@
     <!-- link href="style.css" rel="stylesheet" /-->
 
     <style></style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
+      </head>
 
   <body>
 
-    <div class="container align-bottom justify-content-center bg-secondary" style="max-width: 600px">
-      <div class="row text-right p-3  bg-secondary text-dark
+    <div class="container-fluid align-bottom justify-content-center bg-secondary" >
+	  <div class="row text-right p-1  bg-secondary text-dark
+	   align-items-center pull-right">
+	   <h2 id="prev" class="col-12 text-truncate">0</h2>
+	  </div>
+      <div class="row text-right pt-0 px-3 bg-secondary text-dark
 	   align-items-center pull-right" >
 	   <div class="col-12 bg-light">
-	   	<h1 id="screen" >0</h1>
+	   	<h1 id="screen" class="text-truncate">0</h1>
 	   </div>
 
       </div>
@@ -35,7 +39,7 @@
 		</div>
 		<div class="col-6">
 			<button id="clear" type="button" name="button" class="btn-primary btn-block">
-			C
+			CE
 			</button>
 		</div>
       </div>
